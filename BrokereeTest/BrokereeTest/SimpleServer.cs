@@ -17,14 +17,8 @@ namespace BrokereeTest
         private const int bufferSize = 1024 * 512;
         public SimpleServer()
         {
-            //LogWrite("Server is started!")
         }
         
-        ~SimpleServer()
-        {
-            //LogWrite("Server is stopped!")
-        }
-
         static void Main(string[] args)
         {
             string HTTPAddress = "";
@@ -34,8 +28,7 @@ namespace BrokereeTest
             }
             else
             {
-                //HTTPAddress = "http://*:8080";
-                HTTPAddress = "http://localhost:8080/";
+                HTTPAddress = "http://*:8080";
             }
             // Validation of HTTP(s) address
             Uri uriResult;
